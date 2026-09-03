@@ -1,0 +1,33 @@
+<?php
+/* ====================
+[BEGIN_COT_EXT]
+Code=i18n4marketpro
+Name=Content Internationalization
+Category=customization-i18n
+Description=Enables site contents translation into multiple languages
+Version=1.0.0-1.0.13
+Date=2025-03-18
+Author=Trustmaster, Cotonti Team
+Copyright=Copyright (c) Cotonti Team 2010-2025
+Notes=BSD License
+Auth_guests=R
+Lock_guests=12345A
+Auth_members=RW
+Lock_members=
+Requires_modules=market
+Recommends_modules=
+Requires_plugins=i18n
+Recommends_plugins=i18n
+Order=50
+[END_COT_EXT]
+
+[BEGIN_COT_EXT_CONFIG]
+cats=01:text:::Category codes
+locales=02:text::en|English:Site locales
+omitmain=03:radio::1:Omit language parameter in the URL if pointing to main language
+rewrite=04:radio::0:Enable URL overwrite for language parameter
+cookie=05:radio::0:Remember language selection in cookie
+[END_COT_EXT_CONFIG]
+==================== */
+
+defined('COT_CODE') or die('Wrong URL');
