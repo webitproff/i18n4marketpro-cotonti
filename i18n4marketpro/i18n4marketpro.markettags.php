@@ -20,7 +20,9 @@ Hooks=markettags.main
 defined('COT_CODE') or die('Wrong URL');
 
 global $i18n4marketpro_locale, $i18n4marketpro_read, $i18n4marketpro_write, $i18n4marketpro_admin;
-
+if (empty($item_data) || !is_array($item_data) || empty($item_data['fieldmrkt_id'])) {
+    return;
+}
 // ИСПРАВЛЕНО: определяем, включён ли i18n именно для категории товара
 $cat_i18n_enabled = cot_i18n4marketpro_enabled($item_data['fieldmrkt_cat']);
 
